@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 490px;
+}
+
+.banner img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: 0% 21%;
+    background-color: #ffffff77;
+}
+.mdhl_title{
+    position: absolute;
+    text-align: left;
+    font-size: 50px;
+    background-color: #ffffff84;
+}
+
+.logo img{
+        display: inline-block;
+        position: absolute;
+        left: 81%;
+        top: 75%;
+        z-index: 10;
+        background-color: #ffffff8e;
+        border-radius: 5px;
+}
+
+.img1{
+    display: none;
+}
+
+.main_container{
+    width: 100%;
+    
+}
+
+main > section{
+    display: inline-block;
+}
+
+.navbar{
+    display: inline-block;
+    margin-left: 85px;
+}
+.navbar :first-child{
+    text-decoration: none;
+    color: #000;
+}
+.navbar > a{
+    margin: 45px 20px ;
+    display: block;
+    line-height: 30px;
+}
+
+.section_title{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 510px;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+
+h3{
+    text-indent: initial;
+    margin: 10px;
+}
+
+#dates, #info{
+   text-indent: 35px;
+}
+
+#info{
+    font-size:1em;
+    text-align: left;
+    text-indent: inherit;
+    vertical-align: top;
+    margin-top: 45px;
+    margin-left: 175px;
+}
+ #info > p{
+    padding-bottom: 20px;
+ }
+
+.content1{
+    width: 25%;
+}
+
+ .content{
+    width: 50%;
+    padding-left: 1px;
+    text-align: left;
+    vertical-align: top;
+ }
+
+ .about_info{
+    margin-top: 40px;
+ }
+
+ .about_info > p{
+    text-indent: 35px;
+ }
