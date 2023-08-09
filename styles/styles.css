@@ -18,9 +18,10 @@
 }
 
 .mdhl_title{
+    display: inline;
     text-align: left;
     font-size: 50px;
-    background-color: #ffffff84;
+    background-color: #ffffff5d;
 }
 .logo{
     position: relative;
@@ -38,10 +39,7 @@
     display: none;
 }
 
-.main_container{
-    display:flex;
-    flex-direction: column;   
-}
+
 
 .section_div{
     display: flex;
@@ -119,6 +117,8 @@ h3{
 
  .about_content{
     display:flex;
+    align-items: stretch;
+    justify-content: flex-start;
 
  }
 
