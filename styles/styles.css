@@ -168,7 +168,6 @@ h3{
 
 
  table{
-    margin: 30px;
     border-collapse: collapse;
     table-layout: auto;
     width: 100%;
@@ -189,8 +188,6 @@ h3{
   td{
     padding: 10px;
     text-align: center;
-  }
-  td {
     border: solid 0.5px #c4c1c192;
   }
 
