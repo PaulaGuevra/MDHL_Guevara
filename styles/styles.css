@@ -4,6 +4,10 @@
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+   display: flex;
+   flex-direction: column;
+}
 
 .activated{
     font-weight: 800;
@@ -39,19 +43,31 @@
     display: none;
 }
 
-
+main{
+   height: 100%;
+   background: linear-gradient(45deg, transparent, #efd31a26);
+}
 
 .section_div{
     display: flex;
     flex-direction: row;
 }
 
+.content1{
+   width: 20%;
+   height: auto;
+   background-color: #efd31a34;
+   display: flex;
+}
+
 .navbar{
     display: flex;
     flex-direction: column;
+    height: 100%;
     margin-left: 35px;
     margin-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 100%;
+    
    
 }
 .navbar > a{
@@ -88,27 +104,18 @@ h3{
 #info{
     font-size:1em;
     text-indent: inherit;
-    margin-top: 45px;
-    margin-left: 175px;
+    margin: 45px 185px;
 }
  #info > p{
     padding-bottom: 20px;
  }
 
-.content1{
-    width: 20%;
-    background-color: #efd31a34;
-}
-
  .content{
-    width: 50%;
-    padding-left: 50px;
-    text-align: left;
-    vertical-align: top;
+    width: 70%;
  }
 
  .about_info{
-    margin-top: 40px;
+    margin: 45px 30px;
  }
 
  .about_info > p{
@@ -119,6 +126,7 @@ h3{
     display:flex;
     align-items: stretch;
     justify-content: flex-start;
+    height: 100%;
 
  }
 
@@ -147,6 +155,7 @@ h3{
 
  .detail{
     text-indent: 45px;
+    padding-bottom: 30px;
  }
 
  h5{
@@ -168,11 +177,10 @@ h3{
 
 
  table{
-    margin: 30px;
     border-collapse: collapse;
     table-layout: auto;
     width: 100%;
-    margin: 15px 100px;
+    margin: 15px;
    
  }
  caption{
@@ -189,8 +197,6 @@ h3{
   td{
     padding: 10px;
     text-align: center;
-  }
-  td {
     border: solid 0.5px #c4c1c192;
   }
 
@@ -206,3 +212,319 @@ h3{
  .additional_info > span{
     margin-right: 30px;
  }
+
+ .sched_title{
+   text-align: center;
+   text-wrap: nowrap;
+ }
+
+ .location_icon{
+   float: right;
+   cursor: pointer;
+   transition: background-color 0.5s;
+ }
+.loc_title{
+   background: #000;
+   color: #fff;
+   padding: 3px;
+   display: inline;
+   text-align: center;
+
+}
+
+ .locations{
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   gap: 45px;
+ }
+
+ .locations > div{
+   display: flex;
+   flex-direction: column;
+   margin: 15px;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 10px;
+ }
+ 
+
+ .loc_cap{
+   caption-side: top;
+   display: inline-block;
+ }
+ 
+ iframe{
+   display: inline-block;
+   width: 400px;
+   border:1px solid #c4c1c192 ;
+ }
+   
+ .registration_form{
+   width: 80%;
+   margin: 75px auto;
+   display: flex;
+   flex-direction: column;
+ }
+
+ fieldset{
+   margin: 20px;
+   display: flex;
+   flex-direction: row;
+   padding: 15px;
+ }
+
+ fieldset.address {
+   flex-direction: column;
+   align-items: stretch;
+}
+
+ legend {
+   background-color: #000;
+   color: #f9da27;
+   padding: 3px 6px;
+   margin-bottom: 5px;
+ }
+
+ label{
+   margin: 0px 12px;
+   text-wrap:nowrap;
+ }
+
+ .grade{
+   margin: 0px 10px;
+}
+ 
+
+ select{
+   margin-bottom: 10px;
+ }
+
+ .agreement{
+   display: flex;
+   flex-direction: column;
+   margin: 15px;
+ }
+
+ .signature{
+   display: inline-block;
+   margin: 15px;
+ }
+ 
+ .send_btn {
+   display: inline;
+   width: auto;
+   padding: 7px;
+   align-self: center;
+   color: #f9da27;
+   background-color: #000;
+   border-radius: 3px;
+   border: 1px solid #f9da27;
+   
+}
+.send_btn:hover{
+   color: #000;
+   background-color: #f9da27;
+   border-color: #000;
+}
+
+footer{
+   background-color: #100f0f;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+   margin-top: auto;
+}
+
+/* Media Queries */
+@media only screen and  (max-width :576px){
+   header{
+      height: 115px;
+   }
+   .banner{
+      height:115px ;
+   }
+   .mdhl_title{
+      font-size: larger;
+   }
+   main{
+      display: flex;
+      flex-direction: column;
+   }
+   .section_div{
+      flex-direction: column;
+   }
+   .content1{
+      width: auto;
+      height: fit-content;
+      justify-content: space-around;
+   }
+  .navbar{
+   height: min-content;
+   padding-bottom: 0px;
+   align-items: stretch;
+   justify-content: center;
+   margin: 0px;
+   }
+   .logo{
+      display: inline-block;
+      position: relative;
+   }
+
+   .logo img{
+      position: relative;
+      width: 12%;
+      left: 86%;
+   }
+   .section_title{
+      text-wrap: wrap;
+      text-align: center;
+      margin: 0px;
+      width: auto;
+      align-self: stretch;
+      text-indent: 0px;
+      font-size: medium;
+   }
+
+   #dates{
+      width: auto;
+      margin: 0px;
+      padding: 20px;
+   }
+
+   .about_content{
+      flex-direction: column;
+   }
+
+   .content{
+      width: auto;
+   }
+
+   #info{
+      width: auto;
+      margin: 42px;
+   }
+
+   .rules_section{
+     align-self: center;
+   }
+
+   .text, .rules{
+      width: auto;
+      text-align: justify;
+      margin: 10px;
+   }
+
+   .sched_title{
+      margin: 10px;
+      text-align: center;
+   }
+   table{
+      width: 95%;
+      font-size: smaller;
+      margin: 0px;
+   }
+   .additional_info{
+      margin: 5px;
+   }
+   iframe{
+      width: 200px;
+   }
+
+   .registration_form{
+      margin: 0px;
+      align-items: center;
+      width: auto;
+   }
+
+   fieldset{
+      flex-direction: column;
+      width: 95%;
+   }
+
+   .form_field{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 95%;
+   }
+
+   label{
+      margin: 0px 4px;
+   }
+
+   #positions > label{
+      margin: 0px 14px;
+   }
+
+   .signature{
+      display: flex;
+      flex-direction: column;
+   }
+
+  }
+  @media only screen and (min-width: 577px) and (max-width:948px)
+  {
+   .logo img{
+      width: 13%;
+      left: 84%;
+   }
+
+   .content{
+      width: auto  ;
+   }
+
+   .content1{
+      width: auto;
+   }
+   .navbar{
+      margin: 1px;
+      text-wrap:nowrap
+   }
+
+   #dates, #info{
+      width: auto;
+      margin: 20px 10px;
+   }
+   .rules_section{
+      margin-top: 45px;
+   }
+
+   .additional_info{
+      margin: 10px;
+   }
+   .registration_form{
+      margin: 65px 0px;
+      width: 95%;
+   }
+
+   fieldset{
+      display:flex;
+      flex-direction: column;
+   }
+   .form_field{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 95%;
+   }
+
+   .agreement{
+      font-size: smaller;
+      text-wrap: wrap;
+      margin: 0px;
+      width:70%;
+   }
+
+   .agreement p{
+      text-wrap:wrap
+   }
+
+
+   
+   .signature{
+      display: flex;
+      
+   }
+  }
+
